@@ -25,6 +25,9 @@
     <link rel="stylesheet" href="assets/css/jquery.timepicker.min.css">
     <link rel="stylesheet" href="assets/css/nice-select.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/lightbox2/dist/css/lightbox.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/lightbox2/dist/js/lightbox.min.js"></script>
+
 
 </head>
 
@@ -391,7 +394,7 @@
 
 
 
-        <!-- About Area -->
+      <!-- About Area -->
 <div class="about-area py-120">
     <div class="container">
         <div class="row align-items-center">
@@ -421,23 +424,36 @@
                         </h2>
                     </div>
                     <p class="about-text">
-                        Welcome to Gaangeya Cab Service, your trusted partner for safe, reliable, and comfortable travel. 
-                        Located in the heart of <strong>Kukke Subrahmanya</strong>, we specialize in providing 24/7 taxi services tailored to meet your needs. 
-                        Whether it's a local commute, airport transfer, or pilgrimage trip, we are committed to making your journey seamless and enjoyable.
+                        Welcome to Gaangeya Cab Service, proudly owned by <strong>Rakesh</strong>, your trusted partner for safe, reliable, and comfortable travel. 
+                        Based in the beautiful town of <strong>Kukke Subrahmanya</strong>, we specialize in providing 24/7 taxi services for local commutes, pilgrimage trips, and airport transfers. 
+                        With a commitment to safety, affordability, and punctuality, our experienced drivers ensure a seamless journey every time.
                     </p>
                     <div class="about-list-wrapper">
                         <ul class="about-list list-unstyled">
-                            <li>
-                                24/7 customer support for hassle-free bookings.
-                            </li>
-                            <li>
-                                Experienced drivers ensuring safety and professionalism.
-                            </li>
-                            <li>
-                                Affordable rates with no hidden charges.
-                            </li>
+                            <li>24/7 customer support for hassle-free bookings.</li>
+                            <li>Experienced and professional drivers ensuring safety.</li>
+                            <li>Affordable rates with no hidden charges.</li>
+                            <li>Specialized services for pilgrimage trips to <strong>Dharmasthala</strong> and <strong>Kukke Subrahmanya.</strong></li>
                         </ul>
                     </div>
+                    
+                    <!-- Contact Numbers Section -->
+                    <div class="contact-numbers mt-4">
+                        <p><strong>Contact Us:</strong></p>
+                        <ul class="list-unstyled">
+                            <li><a href="tel:+919482317453"><i class="fas fa-phone-alt"></i> +91 9482317453</a></li>
+                            <li><a href="tel:+918088272651"><i class="fas fa-phone-alt"></i> +91 8088272651</a></li>
+                            <li><a href="tel:+918762255679"><i class="fas fa-phone-alt"></i> +91 8762255679</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- WhatsApp Button -->
+                    <div class="whatsapp-button mt-4">
+                        <a href="https://wa.me/9482317453" target="_blank" class="whatsapp-icon">
+                            <i class="fab fa-whatsapp"></i> Chat with Us on WhatsApp
+                        </a>
+                    </div>
+
                     <a href="about.html" class="theme-btn mt-4">Discover More<i
                             class="fas fa-arrow-right"></i></a>
                 </div>
@@ -446,6 +462,7 @@
     </div>
 </div>
 <!-- About Area End -->
+
 
         <!-- Service Area -->
 <div class="service-area bg py-120">
@@ -646,7 +663,7 @@
             <div class="col-md-6 col-lg-4 filter-item cat3 cat4">
                 <div class="taxi-item">
                     <div class="taxi-img">
-                        <img src="assets/img/taxi/01.png" alt="">
+                        <img src="assets/img/taxi/02.png" alt="">
                     </div>
                     <div class="taxi-content">
                         <div class="taxi-head">
@@ -669,7 +686,7 @@
             <div class="col-md-6 col-lg-4 filter-item cat1 cat4">
                 <div class="taxi-item">
                     <div class="taxi-img">
-                        <img src="assets/img/taxi/01.png" alt="">
+                        <img src="assets/img/taxi/05.png" alt="">
                     </div>
                     <div class="taxi-content">
                         <div class="taxi-head">
@@ -692,7 +709,7 @@
             <div class="col-md-6 col-lg-4 filter-item cat1 cat3">
                 <div class="taxi-item">
                     <div class="taxi-img">
-                        <img src="assets/img/taxi/01.png" alt="">
+                        <img src="assets/img/taxi/04.png" alt="">
                     </div>
                     <div class="taxi-content">
                         <div class="taxi-head">
@@ -715,7 +732,7 @@
             <div class="col-md-6 col-lg-4 filter-item cat1 cat2 cat3">
                 <div class="taxi-item">
                     <div class="taxi-img">
-                        <img src="assets/img/taxi/01.png" alt="">
+                        <img src="assets/img/taxi/03.png" alt="">
                     </div>
                     <div class="taxi-content">
                         <div class="taxi-head">
@@ -738,7 +755,7 @@
             <div class="col-md-6 col-lg-4 filter-item cat4">
                 <div class="taxi-item">
                     <div class="taxi-img">
-                        <img src="assets/img/taxi/01.png" alt="">
+                        <img src="assets/img/taxi/06.png" alt="">
                     </div>
                     <div class="taxi-content">
                         <div class="taxi-head">
@@ -1247,8 +1264,7 @@
             </div>
         </div>
         <!-- faq area end -->
-
-         <!-- tourist places Area -->
+<!-- Tourist Places Area -->
 <div class="vehicle-gallery-area py-120">
     <div class="container">
         <div class="row">
@@ -1260,139 +1276,134 @@
                 </div>
             </div>
         </div>
-        <div class="vehicle-gallery-slider owl-carousel owl-theme">
-            <!-- Slide 1 -->
-            <div class="vehicle-gallery-single">
-                <div class="vehicle-image">
-                    <img src="assets\img\places\place1 (1).jpg" alt="Vehicle 1">
+        <!-- Image Grid -->
+        <div class="vehicle-gallery-grid">
+            <a href="assets/img/places/place1 (1).jpg" data-lightbox="gallery">
+                <div class="vehicle-gallery-single">
+                    <img src="assets/img/places/place1 (1).jpg" alt="Place 1">
                 </div>
-            </div>
-            <!-- Slide 2 -->
-            <div class="vehicle-gallery-single">
-                <div class="vehicle-image">
-                    <img src="assets\img\places\place1 (1).webp" alt="Vehicle 2">
+            </a>
+            <a href="assets\img\places\place1 (1).webp" data-lightbox="gallery">
+                <div class="vehicle-gallery-single">
+                    <img src="assets\img\places\place1 (1).webp" alt="Place 2">
                 </div>
-            </div>
-            <!-- Slide 3 -->
-            <div class="vehicle-gallery-single">
-                <div class="vehicle-image">
-                    <img src="assets\img\places\place1 (2).jpg" alt="Vehicle 3">
+            </a>
+            <a href="assets\img\places\place1 (2).jpg" data-lightbox="gallery">
+                <div class="vehicle-gallery-single">
+                    <img src="assets\img\places\place1 (2).jpg" alt="Place 3">
                 </div>
-            </div>
-            <!-- Add more slides (up to 30) -->
-            <!-- Example Slide 4 -->
-            <div class="vehicle-gallery-single">
-                <div class="vehicle-image">
-                    <img src="assets\img\places\place1 (2).webp" alt="Vehicle 4">
+            </a>
+            <a href="assets\img\places\place1 (2).webp" data-lightbox="gallery">
+                <div class="vehicle-gallery-single">
+                    <img src="assets\img\places\place1 (2).webpg" alt="Place 4">
                 </div>
-            </div>
-            <!-- Repeat the above block for 30 slides -->
-            <div class="vehicle-gallery-single">
-                <div class="vehicle-image">
-                    <img src="assets\img\places\place1 (3).jpg" alt="Vehicle 4">
+            </a>
+            <a href="assets\img\places\place1 (3).jpgg" data-lightbox="gallery">
+                <div class="vehicle-gallery-single">
+                    <img src="assets\img\places\place1 (3).jpg" alt="Place 5">
                 </div>
-            </div>
-            <div class="vehicle-gallery-single">
-                <div class="vehicle-image">
-                    <img src="assets\img\places\place1 (3).webp" alt="Vehicle 4">
+            </a>
+            <a href="assets\img\places\place1 (3).webp" data-lightbox="gallery">
+                <div class="vehicle-gallery-single">
+                    <img src="assets\img\places\place1 (3).webp" alt="Place 6">
                 </div>
-            </div>
-            <div class="vehicle-gallery-single">
-                <div class="vehicle-image">
-                    <img src="assets\img\places\place1 (4).jpg" alt="Vehicle 4">
+            </a>
+            <a href="assets\img\places\place1 (4).jpg" data-lightbox="gallery">
+                <div class="vehicle-gallery-single">
+                    <img src="assets\img\places\place1 (4).jpg" alt="Place 7">
                 </div>
-            </div>
-            <div class="vehicle-gallery-single">
-                <div class="vehicle-image">
-                    <img src="assets\img\places\place1 (4).webp" alt="Vehicle 4">
+            </a>
+            <a href="assets\img\places\place1 (4).webp" data-lightbox="gallery">
+                <div class="vehicle-gallery-single">
+                    <img src="assets\img\places\place1 (4).webp" alt="Place 8">
                 </div>
-            </div>
-            <div class="vehicle-gallery-single">
-                <div class="vehicle-image">
-                    <img src="assets\img\places\place1 (5).jpg" alt="Vehicle 4">
+            </a>
+            <a href="assets\img\places\place1 (5).jpg" data-lightbox="gallery">
+                <div class="vehicle-gallery-single">
+                    <img src="assets\img\places\place1 (5).jpg" alt="Place 9">
                 </div>
-            </div>
-            <div class="vehicle-gallery-single">
-                <div class="vehicle-image">
-                    <img src="assets\img\places\place1 (6).jpg" alt="Vehicle 4">
+            </a>
+            <a href="assets\img\places\place1 (6).jpg" data-lightbox="gallery">
+                <div class="vehicle-gallery-single">
+                    <img src="assets\img\places\place1 (6).jpg" alt="Place 9">
                 </div>
-            </div>
-            <div class="vehicle-gallery-single">
-                <div class="vehicle-image">
-                    <img src="assets\img\places\place1 (7).jpg" alt="Vehicle 4">
+            </a>
+            <a href="assets\img\places\place1 (7).jpg" data-lightbox="gallery">
+                <div class="vehicle-gallery-single">
+                    <img src="assets\img\places\place1 (7).jpg" alt="Place 9">
                 </div>
-            </div>
-            <div class="vehicle-gallery-single">
-                <div class="vehicle-image">
-                    <img src="assets\img\places\place1 (8).jpg" alt="Vehicle 4">
+            </a>
+            <a href="assets\img\places\place1 (8).jpg" data-lightbox="gallery">
+                <div class="vehicle-gallery-single">
+                    <img src="assets\img\places\place1 (8).jpg" alt="Place 9">
                 </div>
-            </div>
-            <div class="vehicle-gallery-single">
-                <div class="vehicle-image">
-                    <img src="assets\img\places\place1 (9).jpg" alt="Vehicle 4">
+            </a>
+            <a href="assets\img\places\place1 (9).jpg" data-lightbox="gallery">
+                <div class="vehicle-gallery-single">
+                    <img src="assets\img\places\place1 (9).jpg" alt="Place 9">
                 </div>
-            </div>
-            <div class="vehicle-gallery-single">
-                <div class="vehicle-image">
-                    <img src="assets\img\places\place1 (10).jpg" alt="Vehicle 4">
+            </a>
+            <a href="assets\img\places\place1 (10).jpg" data-lightbox="gallery">
+                <div class="vehicle-gallery-single">
+                    <img src="assets\img\places\place1 (10).jpg" alt="Place 9">
                 </div>
-            </div>
-            <div class="vehicle-gallery-single">
-                <div class="vehicle-image">
-                    <img src="assets\img\places\place1 (11).jpg" alt="Vehicle 4">
+            </a>
+            <a href="assets\img\places\place1 (11).jpg" data-lightbox="gallery">
+                <div class="vehicle-gallery-single">
+                    <img src="assets\img\places\place1 (11).jpg" alt="Place 9">
                 </div>
-            </div>
-            <div class="vehicle-gallery-single">
-                <div class="vehicle-image">
-                    <img src="assets\img\places\place1 (12).jpg" alt="Vehicle 4">
+            </a>
+            <a href="assets\img\places\place1 (12).jpg" data-lightbox="gallery">
+                <div class="vehicle-gallery-single">
+                    <img src="assets\img\places\place1 (12).jpg" alt="Place 9">
                 </div>
-            </div>
-            <div class="vehicle-gallery-single">
-                <div class="vehicle-image">
-                    <img src="assets\img\places\place1 (13).jpg" alt="Vehicle 4">
+            </a>
+            <a href="assets\img\places\place1 (13).jpg" data-lightbox="gallery">
+                <div class="vehicle-gallery-single">
+                    <img src="assets\img\places\place1 (13).jpg" alt="Place 9">
                 </div>
-            </div>
-            <div class="vehicle-gallery-single">
-                <div class="vehicle-image">
-                    <img src="assets\img\places\place1 (14).jpg" alt="Vehicle 4">
+            </a>
+            <a href="assets\img\places\place1 (14).jpg" data-lightbox="gallery">
+                <div class="vehicle-gallery-single">
+                    <img src="assets\img\places\place1 (14).jpg" alt="Place 9">
                 </div>
-            </div>
-            <div class="vehicle-gallery-single">
-                <div class="vehicle-image">
-                    <img src="assets\img\places\place1 (15).jpg" alt="Vehicle 4">
+            </a>
+            <a href="assets\img\places\place1 (15).jpg" data-lightbox="gallery">
+                <div class="vehicle-gallery-single">
+                    <img src="assets\img\places\place1 (15).jpg" alt="Place 9">
                 </div>
-            </div>
-            <div class="vehicle-gallery-single">
-                <div class="vehicle-image">
-                    <img src="assets\img\places\place1 (16).jpg" alt="Vehicle 4">
+            </a>
+            <a href="assets\img\places\place1 (16).jpg" data-lightbox="gallery">
+                <div class="vehicle-gallery-single">
+                    <img src="assets\img\places\place1 (16).jpg" alt="Place 9">
                 </div>
-            </div>
-            <div class="vehicle-gallery-single">
-                <div class="vehicle-image">
-                    <img src="assets\img\places\place1 (17).jpg" alt="Vehicle 4">
+            </a>
+            <a href="assets\img\places\place1 (17).jpg" data-lightbox="gallery">
+                <div class="vehicle-gallery-single">
+                    <img src="assets\img\places\place1 (17).jpg" alt="Place 9">
                 </div>
-            </div>
-            <div class="vehicle-gallery-single">
-                <div class="vehicle-image">
-                    <img src="assets\img\places\place1 (18).jpg" alt="Vehicle 4">
+            </a>
+            <a href="assets\img\places\place1 (18).jpg" data-lightbox="gallery">
+                <div class="vehicle-gallery-single">
+                    <img src="assets\img\places\place1 (18).jpg" alt="Place 9">
                 </div>
-            </div>
-            <div class="vehicle-gallery-single">
-                <div class="vehicle-image">
-                    <img src="assets\img\places\place1 (19).jpg" alt="Vehicle 4">
+            </a>
+            <a href="assets\img\places\place1 (19).jpg" data-lightbox="gallery">
+                <div class="vehicle-gallery-single">
+                    <img src="assets\img\places\place1 (19).jpg" alt="Place 9">
                 </div>
-            </div>
-            <div class="vehicle-gallery-single">
-                <div class="vehicle-image">
-                    <img src="assets\img\places\place1 (20).jpg" alt="Vehicle 4">
+            </a>
+            <a href="assets\img\places\place1 (20).jpg" data-lightbox="gallery">
+                <div class="vehicle-gallery-single">
+                    <img src="assets\img\places\place1 (20).jpg" alt="Place 9">
                 </div>
-            </div>
-
+            </a>
         </div>
     </div>
 </div>
-<!-- tourist places Area End -->
-        
+<!-- Tourist Places Area End -->
+
+
 
 
        <!-- testimonial area -->
@@ -1624,7 +1635,7 @@
     </div>
 </div>-->
 <!-- blog area end -->
- <!-- Vehicle Gallery Area -->
+<!-- Vehicle Gallery Area -->
 <div class="vehicle-gallery-area py-120">
     <div class="container">
         <div class="row">
@@ -1636,98 +1647,93 @@
                 </div>
             </div>
         </div>
-        <div class="vehicle-gallery-slider owl-carousel owl-theme">
-            <!-- Slide 1 -->
-            <div class="vehicle-gallery-single">
-                <div class="vehicle-image">
+        <!-- Image Grid -->
+        <div class="vehicle-gallery-grid">
+            <a href="assets\img\vehicles\vehicle1.jpg.jpg" data-lightbox="vehicles">
+                <div class="vehicle-gallery-single">
                     <img src="assets\img\vehicles\vehicle1.jpg.jpg" alt="Vehicle 1">
                 </div>
-            </div>
-            <!-- Slide 2 -->
-            <div class="vehicle-gallery-single">
-                <div class="vehicle-image">
+            </a>
+            <a href="assets\img\vehicles\vehicle2.jpg.jpg" data-lightbox="vehicles">
+                <div class="vehicle-gallery-single">
                     <img src="assets\img\vehicles\vehicle2.jpg.jpg" alt="Vehicle 2">
                 </div>
-            </div>
-            <!-- Slide 3 -->
-            <div class="vehicle-gallery-single">
-                <div class="vehicle-image">
+            </a>
+            <a href="assets\img\vehicles\vehicle3.jpg.jpg" data-lightbox="vehicles">
+                <div class="vehicle-gallery-single">
                     <img src="assets\img\vehicles\vehicle3.jpg.jpg" alt="Vehicle 3">
                 </div>
-            </div>
-            <!-- Add more slides (up to 30) -->
-            <!-- Example Slide 4 -->
-            <div class="vehicle-gallery-single">
-                <div class="vehicle-image">
-                    <img src="assets/img/vehicles/vehicle5.jpg" alt="Vehicle 4">
+            </a>
+            <a href="assets\img\vehicles\vehicle4.jpg.jpg" data-lightbox="vehicles">
+                <div class="vehicle-gallery-single">
+                    <img src="assets\img\vehicles\vehicle4.jpg.jpg" alt="Vehicle 4">
                 </div>
-            </div>
-            <!-- Repeat the above block for 30 slides -->
-            <div class="vehicle-gallery-single">
-                <div class="vehicle-image">
-                    <img src="assets/img/vehicles/vehicle6.jpg" alt="Vehicle 4">
+            </a>
+            <a href="assets/img/vehicles/vehicle5.jpg" data-lightbox="vehicles">
+                <div class="vehicle-gallery-single">
+                    <img src="assets/img/vehicles/vehicle5.jpg" alt="Vehicle 5">
                 </div>
-            </div>
-            <div class="vehicle-gallery-single">
-                <div class="vehicle-image">
-                    <img src="assets/img/vehicles/vehicle7.jpg" alt="Vehicle 4">
+            </a>
+            <a href="assets/img/vehicles/vehicle6.jpg" data-lightbox="vehicles">
+                <div class="vehicle-gallery-single">
+                    <img src="assets/img/vehicles/vehicle6.jpg" alt="Vehicle 6">
                 </div>
-            </div>
-            <div class="vehicle-gallery-single">
-                <div class="vehicle-image">
-                    <img src="assets/img/vehicles/vehicle8.jpg" alt="Vehicle 4">
+            </a>
+            <a href="assets/img/vehicles/vehicle7.jpg" data-lightbox="vehicles">
+                <div class="vehicle-gallery-single">
+                    <img src="assets/img/vehicles/vehicle7.jpg" alt="Vehicle 7">
                 </div>
-            </div>
-            <div class="vehicle-gallery-single">
-                <div class="vehicle-image">
-                    <img src="assets/img/vehicles/vehicle9.jpg" alt="Vehicle 4">
+            </a>
+            <a href="assets/img/vehicles/vehicle8.jpg" data-lightbox="vehicles">
+                <div class="vehicle-gallery-single">
+                    <img src="assets/img/vehicles/vehicle8.jpg" alt="Vehicle 8">
                 </div>
-            </div>
-            <div class="vehicle-gallery-single">
-                <div class="vehicle-image">
-                    <img src="assets/img/vehicles/vehicle10.jpg" alt="Vehicle 4">
+            </a>
+            <a href="assets/img/vehicles/vehicle9.jpg" data-lightbox="vehicles">
+                <div class="vehicle-gallery-single">
+                    <img src="assets/img/vehicles/vehicle9.jpg" alt="Vehicle 9">
                 </div>
-            </div>
-            <div class="vehicle-gallery-single">
-                <div class="vehicle-image">
-                    <img src="assets/img/vehicles/vehicle11.jpg" alt="Vehicle 4">
+            </a>
+            <a href="assets/img/vehicles/vehicle10.jpg" data-lightbox="vehicles">
+                <div class="vehicle-gallery-single">
+                    <img src="assets/img/vehicles/vehicle10.jpg" alt="Vehicle 9">
                 </div>
-            </div>
-            <div class="vehicle-gallery-single">
-                <div class="vehicle-image">
-                    <img src="assets/img/vehicles/vehicle12.jpg" alt="Vehicle 4">
+            </a>
+            <a href="assets/img/vehicles/vehicle11.jpg" data-lightbox="vehicles">
+                <div class="vehicle-gallery-single">
+                    <img src="assets/img/vehicles/vehicle11.jpg" alt="Vehicle 9">
                 </div>
-            </div>
-            <div class="vehicle-gallery-single">
-                <div class="vehicle-image">
-                    <img src="assets/img/vehicles/vehicle13.jpg" alt="Vehicle 4">
+            </a>
+            <a href="assets/img/vehicles/vehicle12.jpg" data-lightbox="vehicles">
+                <div class="vehicle-gallery-single">
+                    <img src="assets/img/vehicles/vehicle12.jpg" alt="Vehicle 9">
                 </div>
-            </div>
-            <div class="vehicle-gallery-single">
-                <div class="vehicle-image">
-                    <img src="assets/img/vehicles/vehicle14.jpg" alt="Vehicle 4">
+            </a>
+            <a href="assets/img/vehicles/vehicle13.jpg" data-lightbox="vehicles">
+                <div class="vehicle-gallery-single">
+                    <img src="assets/img/vehicles/vehicle13.jpg" alt="Vehicle 9">
                 </div>
-            </div>
-            <div class="vehicle-gallery-single">
-                <div class="vehicle-image">
-                    <img src="assets/img/vehicles/vehicle15.jpeg" alt="Vehicle 4">
+            </a>
+            <a href="assets/img/vehicles/vehicle14.jpg" data-lightbox="vehicles">
+                <div class="vehicle-gallery-single">
+                    <img src="assets/img/vehicles/vehicle14.jpg" alt="Vehicle 9">
                 </div>
-            </div>
-            <div class="vehicle-gallery-single">
-                <div class="vehicle-image">
-                    <img src="assets/img/vehicles/vehicle16.jpeg" alt="Vehicle 4">
+            </a>
+            <a href="assets/img/vehicles/vehicle15.jpeg" data-lightbox="vehicles">
+                <div class="vehicle-gallery-single">
+                    <img src="assets/img/vehicles/vehicle15.jpeg" alt="Vehicle 9">
                 </div>
-            </div>
-            <div class="vehicle-gallery-single">
-                <div class="vehicle-image">
-                    <img src="assets/img/vehicles/vehicle4.jpg.jpg" alt="Vehicle 4">
+            </a>
+            <a href="assets/img/vehicles/vehicle16.jpeg" data-lightbox="vehicles">
+                <div class="vehicle-gallery-single">
+                    <img src="assets/img/vehicles/vehicle16.jpeg" alt="Vehicle 9">
                 </div>
-            </div>
-
+            </a>
         </div>
     </div>
 </div>
 <!-- Vehicle Gallery Area End -->
+
 
        <!-- partner -->
         <div class="partner pt-80 pb-80">

@@ -5576,3 +5576,107 @@ body.rtl-mode .price-wrapper {
   background: #ff5e14; /* Divider color */
 }
 
+.contact-numbers ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.contact-numbers ul li a {
+  color: #ff5e14;
+  text-decoration: none;
+}
+
+.contact-numbers ul li a:hover {
+  text-decoration: underline;
+}
+
+.whatsapp-icon {
+  display: inline-flex;
+  align-items: center;
+  background-color: #25D366;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+}
+
+.whatsapp-icon i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.whatsapp-icon:hover {
+  background-color: #1ebe57;
+  transform: scale(1.05);
+}
+
+
+.vehicle-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 15px; /* Spacing between items */
+  margin-top: 30px;
+}
+
+.vehicle-gallery-single img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  object-fit: cover;
+}
+
+.vehicle-gallery-single img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .vehicle-gallery-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .vehicle-gallery-grid {
+      grid-template-columns: 1fr; /* 1 column for mobile */
+  }
+}
+
+
+.vehicle-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 15px; /* Spacing between items */
+  margin-top: 30px;
+}
+
+.vehicle-gallery-single img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  object-fit: cover;
+}
+
+.vehicle-gallery-single img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .vehicle-gallery-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .vehicle-gallery-grid {
+      grid-template-columns: 1fr; /* 1 column for mobile */
+  }
+}
