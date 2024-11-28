@@ -5546,4 +5546,33 @@ body.rtl-mode .price-wrapper {
     margin-top: 80px;
   }
 }
+/*====================
+55. Vehicle Gallery
+======================*/
+.vehicle-gallery-area {
+  background-color: #222; /* Dark background */
+  padding: 60px 0;
+}
+
+.vehicle-gallery-slider .vehicle-gallery-single {
+  overflow: hidden;
+  border-radius: 15px; /* Curved border */
+}
+
+.vehicle-gallery-single img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.vehicle-gallery-single:hover img {
+  transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.site-heading .heading-divider {
+  margin: 20px auto;
+  height: 4px;
+  width: 60px;
+  background: #ff5e14; /* Divider color */
+}
 
