@@ -5576,19 +5576,28 @@ body.rtl-mode .price-wrapper {
   background: #ff5e14; /* Divider color */
 }
 
-.contact-numbers ul li {
+.contact-numbers-list li {
   margin-bottom: 10px;
-  font-size: 16px;
 }
 
-.contact-numbers ul li a {
-  color: #ff5e14;
-  text-decoration: none;
+.contact-numbers-list li a {
+  font-size: 1.5rem; /* Increase font size */
+  font-weight: bold; /* Make it bold */
+  color: #2a9df4; /* Highlight with a color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease;
 }
 
-.contact-numbers ul li a:hover {
-  text-decoration: underline;
+.contact-numbers-list li a:hover {
+  color: #0056b3; /* Change color on hover */
 }
+
+.contact-numbers-list li i {
+  font-size: 1.8rem; /* Make the icon slightly larger */
+  margin-right: 8px; /* Add space between the icon and number */
+  color: #25d366; /* WhatsApp green for icons */
+}
+
 
 .whatsapp-icon {
   display: inline-flex;
