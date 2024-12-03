@@ -939,9 +939,10 @@ label {
   z-index: 999;
 }
 
+/* Navbar fixed-top styling on scroll */
 .navbar.fixed-top {
-  background: var(--color-white);
-  box-shadow: var(--box-shadow2);
+  background-color: rgba(0, 0, 0, 0.8); /* Black with transparency */
+  box-shadow: var(--box-shadow2); /* Retain shadow effect */
   animation: slide-down 0.7s;
 }
 
@@ -1162,6 +1163,41 @@ label {
   }
 
 }
+/* Navbar background style */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8); /* Black with transparency */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff; /* White for menu items */
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #f0c800; /* Yellow on hover */
+}
+
+/* GAANGEYA Heading Styling */
+.brand-heading .yellow-black {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.brand-heading .yellow-black::first-letter {
+    color: #000; /* Black for the "NG" part */
+    font-weight: bold;
+}
+
+.brand-heading .yellow-black {
+    color: #f0c800; /* Yellow for the rest of the text */
+}
+/* Brand Icon Styling */
+.brand-icon {
+  width: 10px; /* Adjust the size of the icon */
+  height: 100px; /* Adjust the size of the icon */
+  margin-right: 10px; /* Add some spacing between the icon and text */
+  vertical-align: middle; /* Align the icon with the text */
+}
+
 
 
 /* mobile menu */
